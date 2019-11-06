@@ -11,7 +11,8 @@ pool:
 
 stages:
 - stage: Build
-- task: Maven@3
+ steps:
+ - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
     publishJUnitResults: true
